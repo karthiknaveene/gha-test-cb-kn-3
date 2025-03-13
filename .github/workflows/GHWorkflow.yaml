@@ -28,7 +28,7 @@ jobs:
         run: sleep 20
 
       - name: Publish test results changed
-        run: echo "test results published..."
+        run: echo "test results published"..."
 
 
   deploy:
