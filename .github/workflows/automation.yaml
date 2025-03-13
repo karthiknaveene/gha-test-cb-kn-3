@@ -1,9 +1,8 @@
 name: Same Workflow
 
 on:
-  push:
-    branches:
-      - feature-1
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
   first-job:
