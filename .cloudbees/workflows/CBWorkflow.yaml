@@ -4,8 +4,8 @@ name: My workflow
 
 on:
   push:
-    branches:
-      - 'feature-3'
+    tags:
+      - "v*"
 
 jobs:
   build:
