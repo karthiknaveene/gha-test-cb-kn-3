@@ -1,8 +1,7 @@
 name: GH Workflow - 1
 on:
-  push:
-    branches:
-      - feature-1
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
   build:
@@ -28,7 +27,7 @@ jobs:
         run: sleep 20
 
       - name: Publish test results changed
-        run: echo "test results published"..."
+        run: echo "test results published..."
 
 
   deploy:
