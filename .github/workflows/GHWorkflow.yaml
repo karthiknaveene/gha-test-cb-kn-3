@@ -29,17 +29,6 @@ jobs:
 
       - name: Publish test results changed
         run: echo "test results published..."
-         
-      - name: New step
-        run: echo "new step..."
-  
-  logs-print:
-    runs-on: ubuntu-latest
-    needs: [build]   # Depends on 'build' job
-    steps:
-
-      - name: Collect test results changed new
-        run: sleep 5
 
 
   deploy:
