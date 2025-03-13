@@ -1,7 +1,9 @@
 name: GH Workflow - 1
+
 on:
-  pull_request:
-    types: [opened, reopened]
+    push:
+      branches:
+        - main
 
 jobs:
   build:
